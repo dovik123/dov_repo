@@ -20,7 +20,7 @@ int main() {
     char errbuf[PCAP_ERRBUF_SIZE];  // Error buffer
     pcap_if_t* alldevs;  // All available devices
     pcap_if_t* device;   // The device we will sniff on
-
+     /// changes
     // Find all network devices
     if (pcap_findalldevs(&alldevs, errbuf) == -1) {
         std::cerr << "Error finding devices: " << errbuf << std::endl;
